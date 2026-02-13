@@ -48,8 +48,10 @@ function Calcular(n1, n2, operacao) {
 
 
 
-
 module.exports = {
     validação,
     Calcular
 }
+
+//A FUNÇÃO CALCULAR PRECISA CHAMAR A VALIDAÇÃO DA , E DO . 
+// CRIAR OUTRA FUNÇÃO PARA VALIDAR O . E ,
