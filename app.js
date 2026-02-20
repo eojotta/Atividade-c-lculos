@@ -22,22 +22,17 @@ entradaDeDados.question('Digite um número: ', function (valor1) {
         entradaDeDados.question('Qual operação matemática deseja realizar \nAdição \nSubtração \nMultiplicação \nDivisão \n', function (operacao) {
             let operacaoReal = operacao
 
-
-
             let Calculos = require('./modulo/calculo')
-
-
 
             let validação = Calculos.validação
             if (validação) {
                 let resultados = Calculos.Calcular(n1, n2, operacao)
-                console.log('O resultado da operação é' + resultados)
+                console.log('O resultado da operação é: ' + resultados.toFixed(2))
 
 
             } else {
                 console.log('Erro')
             }
-
 
         })
     })

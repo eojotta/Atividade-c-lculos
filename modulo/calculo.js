@@ -7,7 +7,7 @@ function validação(valor1, valor2, operacao) {
 
     //Bloqueio de Caracteres ou preenchimento vazio 
     if (n1 == '' || isNaN(n1) || n2 == '' || isNaN(n2)) {
-        console.log('Erro')
+        console.log('Erro: Falta de caracteres ou caracteres inválidos')
         return false
     } else if (operacaoReal != 'Adição' && operacaoReal != 'Subtração' && operacaoReal != 'Multiplicação' && operacaoReal != 'Divisão') {
         console.log('ERRO:inválido')
@@ -19,8 +19,8 @@ function validação(valor1, valor2, operacao) {
 }
 
 function Calcular(n1, n2, operacao) {
-    let valor1 = Number(n1)
-    let valor2 = Number(n2)
+    let valor1 = Number(n1.replace(',','.'))
+    let valor2 = Number(n2.replace(',','.'))
     let operacaoReal = operacao
 
 
@@ -44,8 +44,6 @@ function Calcular(n1, n2, operacao) {
         return resultados
     }
 }
-
-
 
 
 module.exports = {
