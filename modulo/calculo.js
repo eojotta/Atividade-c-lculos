@@ -27,21 +27,21 @@ function Calcular(n1, n2, operacao) {
     //SOMA
     if (operacao == 'Adição') {
         let resultados = valor1 + valor2
-        return resultados
+        return resultados.toFixed(2)
 
         //SUBTRAÇÃO
     } else if (operacao == 'Subtração') {
         let resultados = valor1 - valor2
-        return resultados
+        return resultados.toFixed(2)
 
         //Multiplicação
     } else if (operacao == 'Multiplicação') {
         let resultados = valor1 * valor2
-        return resultados
+        return resultados.toFixed(2)
 
     } else if (operacao == 'Divisão') {
         let resultados = valor1 / valor2
-        return resultados
+        return resultados.toFixed(2)
     }
 }
 
